@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f24ee7de-9df8-4679-894e-35845f67bbcf" name="wab_app-106">
+        <fileTransfer accessType="SFTP" host="192.168.50.106" port="22" sshConfigId="23164b3f-dece-4fea-a1ff-4d01a21f12dd" sshConfig="sherwood@192.168.50.106:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

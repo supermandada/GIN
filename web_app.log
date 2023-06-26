@@ -1,0 +1,9 @@
+{"level":"ERROR","time":"2023-06-26T17:56:20.722+0800","caller":"web_app/main.go:38","msg":"mysql init failed err:","error":"dial tcp 127.0.0.1:3306: connect: connection refused"}
+{"level":"FATAL","time":"2023-06-26T18:13:30.927+0800","caller":"web_app/main.go:59","msg":"listen: %s\n","error":"listen tcp: address 8080: missing port in address"}
+{"level":"INFO","time":"2023-06-26T18:16:32.336+0800","caller":"logger/logger.go:67","msg":"/","status":404,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36","errors":"","cost":0.000000516}
+{"level":"INFO","time":"2023-06-26T18:16:33.023+0800","caller":"logger/logger.go:67","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36","errors":"","cost":0.00000145}
+{"level":"INFO","time":"2023-06-26T18:18:17.329+0800","caller":"web_app/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-26T18:18:17.329+0800","caller":"web_app/main.go:80","msg":"Server exiting"}
+{"level":"INFO","time":"2023-06-26T18:19:30.179+0800","caller":"logger/logger.go:67","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36","errors":"","cost":0.000010095}
+{"level":"INFO","time":"2023-06-26T18:19:51.158+0800","caller":"web_app/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-26T18:19:51.158+0800","caller":"web_app/main.go:80","msg":"Server exiting"}
