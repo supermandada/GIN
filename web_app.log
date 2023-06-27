@@ -7,3 +7,49 @@
 {"level":"INFO","time":"2023-06-26T18:19:30.179+0800","caller":"logger/logger.go:67","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36","errors":"","cost":0.000010095}
 {"level":"INFO","time":"2023-06-26T18:19:51.158+0800","caller":"web_app/main.go:71","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2023-06-26T18:19:51.158+0800","caller":"web_app/main.go:80","msg":"Server exiting"}
+{"level":"INFO","time":"2023-06-27T09:23:40.111+0800","caller":"settings/settings.go:32","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T09:23:40.116+0800","caller":"settings/settings.go:32","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T09:24:00.756+0800","caller":"web_app/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-27T09:24:00.757+0800","caller":"web_app/main.go:80","msg":"Server exiting"}
+{"level":"INFO","time":"2023-06-27T09:25:18.864+0800","caller":"settings/settings.go:34","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T09:25:18.865+0800","caller":"settings/settings.go:34","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T09:25:36.493+0800","caller":"settings/settings.go:34","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T09:25:36.523+0800","caller":"settings/settings.go:34","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T09:25:40.704+0800","caller":"settings/settings.go:34","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T09:25:40.734+0800","caller":"settings/settings.go:34","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T09:26:12.302+0800","caller":"web_app/main.go:73","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-27T09:26:12.303+0800","caller":"web_app/main.go:82","msg":"Server exiting"}
+{"level":"INFO","time":"2023-06-27T11:11:30.922+0800","caller":"web_app/main.go:73","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-27T11:11:30.923+0800","caller":"web_app/main.go:82","msg":"Server exiting"}
+{"level":"INFO","time":"2023-06-27T11:11:34.719+0800","caller":"web_app/main.go:73","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-27T11:11:34.720+0800","caller":"web_app/main.go:82","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-27T14:01:23.081+0800","caller":"web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-27T14:05:42.082+0800","caller":"web_app/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-27T14:05:42.082+0800","caller":"web_app/main.go:80","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-27T14:10:45.007+0800","caller":"web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-27T14:11:15.656+0800","caller":"web_app/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-27T14:11:15.656+0800","caller":"web_app/main.go:80","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-27T14:18:31.484+0800","caller":"web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-27T14:18:46.535+0800","caller":"logger/logger.go:66","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36","errors":"","cost":0.000013005}
+{"level":"INFO","time":"2023-06-27T14:18:47.093+0800","caller":"logger/logger.go:66","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36","errors":"","cost":0.000001491}
+{"level":"INFO","time":"2023-06-27T14:19:11.169+0800","caller":"settings/settings.go:77","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T14:19:11.174+0800","caller":"settings/settings.go:77","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T14:19:23.880+0800","caller":"web_app/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-27T14:19:23.880+0800","caller":"web_app/main.go:80","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-27T14:20:45.614+0800","caller":"web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-27T14:21:06.610+0800","caller":"web_app/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-27T14:21:09.180+0800","caller":"logger/logger.go:66","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36","errors":"","cost":5.001072902}
+{"level":"INFO","time":"2023-06-27T14:21:09.268+0800","caller":"web_app/main.go:80","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-27T16:43:53.725+0800","caller":"web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-27T16:44:06.095+0800","caller":"logger/logger.go:66","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36","errors":"","cost":5.003654275}
+{"level":"INFO","time":"2023-06-27T16:44:24.104+0800","caller":"settings/settings.go:78","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T16:44:24.109+0800","caller":"settings/settings.go:78","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T16:52:54.412+0800","caller":"web_app/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-27T16:52:54.412+0800","caller":"web_app/main.go:80","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-27T16:52:56.525+0800","caller":"web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-27T16:53:18.591+0800","caller":"logger/logger.go:66","msg":"/version","status":200,"method":"GET","path":"/version","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36","errors":"","cost":5.000703422}
+{"level":"INFO","time":"2023-06-27T16:53:32.412+0800","caller":"settings/settings.go:78","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T16:53:32.417+0800","caller":"settings/settings.go:78","msg":"config file changed"}
+{"level":"INFO","time":"2023-06-27T16:53:50.206+0800","caller":"web_app/main.go:71","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-27T16:53:52.858+0800","caller":"logger/logger.go:66","msg":"/version","status":200,"method":"GET","path":"/version","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36","errors":"","cost":5.000682946}
+{"level":"INFO","time":"2023-06-27T16:53:52.866+0800","caller":"web_app/main.go:80","msg":"Server exiting"}

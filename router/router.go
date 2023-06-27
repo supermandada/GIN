@@ -2,7 +2,9 @@ package router
 
 import (
 	"net/http"
+	"time"
 	"web_app/logger"
+	"web_app/settings"
 
 	"github.com/gin-gonic/gin"
 )
@@ -13,7 +15,12 @@ func Setup() *gin.Engine {
 
 	// 注册路由
 	r.GET("/", func(c *gin.Context) {
+		time.Sleep(time.Second * 5)
 		c.String(http.StatusOK, "ok")
+	})
+	r.GET("/version", func(c *gin.Context) {
+		time.Sleep(time.Second * 5)
+		c.String(http.StatusOK, settings.Conf.Version)
 	})
 	return r
 }
