@@ -2,15 +2,18 @@ package main
 
 import (
 	"context"
+	"flag"
 	"fmt"
 	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
+	"web_app/controllers"
 	"web_app/dao/mysql"
 	"web_app/dao/redis"
 	"web_app/logger"
+	"web_app/pkg/snowflake"
 	"web_app/router"
 	"web_app/settings"
 
@@ -19,8 +22,16 @@ import (
 
 func main() {
 	// go的web开发脚手架
+	var filepath string
+	flag.StringVar(&filepath, "file", "./conf/config.yaml", "项目配置文件")
+	flag.Parse()
+
+	//if len(os.Args) < 2 {
+	//	fmt.Println("还没传参数。。。")
+	//	return
+	//}
 	// 1、加载配置
-	if err := settings.Init(); err != nil {
+	if err := settings.Init(filepath); err != nil {
 		fmt.Println("settings init failed err:", err)
 		zap.L().Error("settings init failed err:", zap.Error(err))
 		return
@@ -45,6 +56,18 @@ func main() {
 		return
 	}
 	defer redis.Close()
+
+	// 初始化雪花算法ID生产器
+	if err := snowflake.Init(settings.Conf.StartTime, settings.Conf.MachineID); err != nil {
+		zap.L().Error("snowflake init failed err:", zap.Error(err))
+		return
+	}
+
+	// 初始化错误翻译器
+	if err := controllers.InitTrans("zh"); err != nil {
+		zap.L().Error("Trans init failed err:", zap.Error(err))
+		return
+	}
 	// 5、注册路由
 	r := router.Setup()
 	// 6、启动服务
