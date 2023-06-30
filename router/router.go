@@ -20,7 +20,7 @@ func Setup(mode string) *gin.Engine {
 	r.POST("/signup", controllers.SignUpHandle)
 
 	// 用户登录
-	r.POST("/signin", controllers.SignInHandle)
+	r.POST("/login", controllers.LogInHandle)
 
 	// 注册路由
 	r.GET("/", func(c *gin.Context) {

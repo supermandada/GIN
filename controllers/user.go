@@ -57,8 +57,8 @@ func SignUpHandle(c *gin.Context) {
 	})
 }
 
-// SignInHandle 登录路由逻辑处理
-func SignInHandle(c *gin.Context) {
+// LogInHandle 登录路由逻辑处理
+func LogInHandle(c *gin.Context) {
 	// 接收和校验参数
 	p := new(models.ParamSignInUser)
 	if err := c.ShouldBindJSON(p); err != nil {
@@ -79,7 +79,7 @@ func SignInHandle(c *gin.Context) {
 	}
 
 	// 业务逻辑的处理
-	if err := logic.SignIn(p); err != nil {
+	if err := logic.LogIn(p); err != nil {
 		errs, ok := err.(validator.ValidationErrors)
 		zap.L().Error("signup logic handle failed", zap.Error(err))
 		if !ok {

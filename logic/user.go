@@ -24,6 +24,6 @@ func SignUp(p *models.ParamSignUpUser) (err error) {
 	return mysql.InsertUser(user)
 }
 
-func SignIn(p *models.ParamSignInUser) (err error) {
+func LogIn(p *models.ParamSignInUser) (err error) {
 	return err
 }
