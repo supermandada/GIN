@@ -13,9 +13,9 @@ log:
 mysql:
   host: "192.168.50.106"
   port: 3306
-  dbname: "sql_demo"
-  user: "root"
-  password: "mysql"
+  dbname: "bluebell"
+  user: "bluebell"
+  password: "fai"
   max_open_conn: 200
   max_idle_conn: 10
 redis:

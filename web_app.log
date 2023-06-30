@@ -185,3 +185,74 @@
 {"level":"INFO","time":"2023-06-29T18:01:02.642+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000157889}
 {"level":"INFO","time":"2023-06-29T18:26:28.361+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2023-06-29T18:26:28.361+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-29T20:10:34.664+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"DEBUG","time":"2023-06-29T20:10:52.928+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-29T20:11:59.331+0800","caller":"controllers/user.go:23","msg":"signup handle invalid param","error":"Key: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'required' tag\nKey: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2023-06-29T20:11:59.331+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000331981}
+{"level":"INFO","time":"2023-06-29T20:12:24.721+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000101064}
+{"level":"ERROR","time":"2023-06-29T20:12:35.150+0800","caller":"controllers/user.go:23","msg":"signup handle invalid param","error":"Key: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag\nKey: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2023-06-29T20:12:35.150+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000129422}
+{"level":"ERROR","time":"2023-06-29T20:12:41.036+0800","caller":"controllers/user.go:23","msg":"signup handle invalid param","error":"Key: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'required' tag\nKey: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2023-06-29T20:12:41.036+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000159564}
+{"level":"INFO","time":"2023-06-29T20:12:49.919+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000093916}
+{"level":"INFO","time":"2023-06-29T20:12:57.140+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-29T20:12:57.141+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-29T21:01:23.765+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-29T21:01:35.973+0800","caller":"controllers/user.go:23","msg":"signup handle invalid param","error":"Key: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag\nKey: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2023-06-29T21:01:35.973+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000271671}
+{"level":"INFO","time":"2023-06-29T21:01:41.335+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.05747943}
+{"level":"INFO","time":"2023-06-29T21:01:55.912+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.029710091}
+{"level":"INFO","time":"2023-06-29T21:04:41.180+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-29T21:04:41.180+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-29T21:04:42.991+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-29T21:04:45.845+0800","caller":"controllers/user.go:41","msg":"signup logic handle failed","error":"Error 1054 (42S22): Unknown column 'user_id' in 'field list'"}
+{"level":"INFO","time":"2023-06-29T21:04:45.846+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.038772628}
+{"level":"INFO","time":"2023-06-29T21:09:36.710+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-29T21:09:36.710+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-29T21:13:17.495+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-29T21:13:20.396+0800","caller":"controllers/user.go:41","msg":"signup logic handle failed","error":"Error 1054 (42S22): Unknown column 'user_id' in 'field list'"}
+{"level":"INFO","time":"2023-06-29T21:13:20.396+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.040585323}
+{"level":"INFO","time":"2023-06-29T21:13:30.402+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-29T21:13:30.402+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-29T21:13:43.498+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-29T21:13:47.398+0800","caller":"controllers/user.go:41","msg":"signup logic handle failed","error":"Error 1054 (42S22): Unknown column 'user_id' in 'field list'"}
+{"level":"INFO","time":"2023-06-29T21:13:47.398+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.050973825}
+{"level":"INFO","time":"2023-06-29T21:15:46.140+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-29T21:15:46.140+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-29T21:15:48.023+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-29T21:15:51.174+0800","caller":"controllers/user.go:41","msg":"signup logic handle failed","error":"Error 1054 (42S22): Unknown column 'user_id' in 'field list'"}
+{"level":"INFO","time":"2023-06-29T21:15:51.175+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.039217747}
+{"level":"INFO","time":"2023-06-29T21:16:17.902+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-29T21:16:17.902+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-29T21:24:56.897+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-29T21:24:59.868+0800","caller":"controllers/user.go:41","msg":"signup logic handle failed","error":"Error 1054 (42S22): Unknown column 'username' in 'field list'"}
+{"level":"INFO","time":"2023-06-29T21:24:59.869+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.046502346}
+{"level":"INFO","time":"2023-06-29T21:25:09.089+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-29T21:25:09.090+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-29T21:26:36.692+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-29T21:26:40.285+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.1379006}
+{"level":"INFO","time":"2023-06-29T21:36:20.737+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.16012364}
+{"level":"INFO","time":"2023-06-29T21:37:05.217+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-29T21:37:05.218+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-29T21:37:56.997+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-29T21:38:00.178+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.146865477}
+{"level":"INFO","time":"2023-06-29T21:49:45.148+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-29T21:49:45.149+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-29T21:54:07.464+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-29T21:54:11.486+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-29T21:54:11.486+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-29T21:57:34.522+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-29T21:57:38.098+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.125233493}
+{"level":"INFO","time":"2023-06-29T22:02:41.807+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-29T22:02:41.808+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-29T22:04:25.404+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-29T22:04:28.559+0800","caller":"controllers/user.go:41","msg":"signup logic handle failed","error":"用户已存在"}
+{"level":"INFO","time":"2023-06-29T22:04:28.559+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.065128107}
+{"level":"INFO","time":"2023-06-29T22:04:39.177+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-29T22:04:39.177+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-30T10:43:08.429+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-30T10:43:35.899+0800","caller":"controllers/user.go:23","msg":"signup handle invalid param","error":"Key: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag\nKey: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2023-06-30T10:43:35.900+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000183475}
+{"level":"INFO","time":"2023-06-30T10:43:42.434+0800","caller":"logger/logger.go:66","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.007008035}
+{"level":"INFO","time":"2023-06-30T10:45:51.039+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-30T10:45:51.040+0800","caller":"web_app/main.go:103","msg":"Server exiting"}

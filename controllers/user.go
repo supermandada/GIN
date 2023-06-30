@@ -36,7 +36,21 @@ func SignUpHandle(c *gin.Context) {
 	}
 	fmt.Println(p)
 	// 业务逻辑的处理
-	logic.SignUp(p)
+	if err := logic.SignUp(p); err != nil {
+		errs, ok := err.(validator.ValidationErrors)
+		zap.L().Error("signup logic handle failed", zap.Error(err))
+		if !ok {
+			c.JSON(http.StatusOK, gin.H{
+				"msg": err.Error(),
+			})
+			return
+		} else {
+			c.JSON(http.StatusOK, gin.H{
+				"msg": removeTopStruct(errs.Translate(trans)),
+			})
+			return
+		}
+	}
 	// 返回响应
 	c.JSON(http.StatusOK, gin.H{
 		"msg": "success",
