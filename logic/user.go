@@ -8,7 +8,7 @@ import (
 
 func SignUp(p *models.ParamSignUpUser) (err error) {
 	// 业务逻辑处理，判断用户是否存在
-	if err := mysql.CheckUsernameExist(p.Username); err != nil {
+	if _, err := mysql.CheckUsernameExist(p.Username); err != nil {
 		return err
 	}
 	// 生成UID
@@ -25,5 +25,15 @@ func SignUp(p *models.ParamSignUpUser) (err error) {
 }
 
 func LogIn(p *models.ParamLogInUser) (err error) {
-	return err
+	// 业务逻辑处理，判断用户是否存在
+	if ok, err := mysql.CheckUsernameExist(p.Username); !ok {
+		return err
+	}
+	// 创建用户实例存入数据中
+	user := &models.User{
+		Username: p.Username,
+		Password: p.Password,
+	}
+	// 判断密码是否正确
+	return mysql.CheckPassword(user)
 }

@@ -53,7 +53,7 @@ func SignUpHandle(c *gin.Context) {
 	}
 	// 返回响应
 	c.JSON(http.StatusOK, gin.H{
-		"msg": "success",
+		"msg": "signup success",
 	})
 }
 
@@ -63,7 +63,7 @@ func LogInHandle(c *gin.Context) {
 	p := new(models.ParamLogInUser)
 	if err := c.ShouldBindJSON(p); err != nil {
 		errs, ok := err.(validator.ValidationErrors)
-		zap.L().Error("signIn handle invalid param", zap.Error(err))
+		zap.L().Error("login handle invalid param", zap.Error(err))
 		if !ok {
 			c.JSON(http.StatusOK, gin.H{
 				"msg": err.Error(),
@@ -81,10 +81,10 @@ func LogInHandle(c *gin.Context) {
 	// 业务逻辑的处理
 	if err := logic.LogIn(p); err != nil {
 		errs, ok := err.(validator.ValidationErrors)
-		zap.L().Error("signup logic handle failed", zap.Error(err))
+		zap.L().Error("login logic handle failed", zap.String("username", p.Username), zap.Error(err))
 		if !ok {
 			c.JSON(http.StatusOK, gin.H{
-				"msg": err.Error(),
+				"msg": "用户名或密码错误",
 			})
 			return
 		} else {
@@ -96,6 +96,6 @@ func LogInHandle(c *gin.Context) {
 	}
 	// 返回响应
 	c.JSON(http.StatusOK, gin.H{
-		"msg": "success",
+		"msg": "login success",
 	})
 }

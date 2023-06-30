@@ -36,3 +36,22 @@
 {"level":"DEBUG","time":"2023-06-30T12:00:04.321+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
 {"level":"INFO","time":"2023-06-30T12:00:08.820+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2023-06-30T12:00:08.820+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-30T14:17:52.528+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-30T14:17:59.767+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-30T14:17:59.767+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-30T14:18:25.205+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-30T14:19:18.637+0800","caller":"controllers/user.go:66","msg":"login handle invalid param","error":"invalid character '}' looking for beginning of object key string"}
+{"level":"INFO","time":"2023-06-30T14:19:18.637+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.00013878}
+{"level":"ERROR","time":"2023-06-30T14:19:22.966+0800","caller":"controllers/user.go:66","msg":"login handle invalid param","error":"Key: 'ParamLogInUser.password' Error:Field validation for 'password' failed on the 'required' tag"}
+{"level":"INFO","time":"2023-06-30T14:19:22.966+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000158413}
+{"level":"ERROR","time":"2023-06-30T14:19:37.607+0800","caller":"controllers/user.go:84","msg":"login logic handle failed","username":"rose","error":"用户密码错误"}
+{"level":"INFO","time":"2023-06-30T14:19:37.607+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.053919678}
+{"level":"ERROR","time":"2023-06-30T14:19:43.704+0800","caller":"controllers/user.go:84","msg":"login logic handle failed","username":"rose1","error":"用户不存在"}
+{"level":"INFO","time":"2023-06-30T14:19:43.704+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.023648249}
+{"level":"ERROR","time":"2023-06-30T14:20:09.953+0800","caller":"controllers/user.go:84","msg":"login logic handle failed","username":"rose","error":"用户密码错误"}
+{"level":"INFO","time":"2023-06-30T14:20:09.953+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.00508587}
+{"level":"INFO","time":"2023-06-30T14:20:23.185+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.007064801}
+{"level":"ERROR","time":"2023-06-30T14:21:03.698+0800","caller":"controllers/user.go:84","msg":"login logic handle failed","username":"jack","error":"用户密码错误"}
+{"level":"INFO","time":"2023-06-30T14:21:03.698+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.297993814}
+{"level":"INFO","time":"2023-06-30T14:23:17.918+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-30T14:23:17.918+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
