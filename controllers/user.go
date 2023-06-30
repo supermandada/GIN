@@ -1,7 +1,8 @@
 package controllers
 
 import (
-	"net/http"
+	"errors"
+	"web_app/dao/mysql"
 	"web_app/logic"
 	"web_app/models"
 
@@ -22,16 +23,11 @@ func SignUpHandle(c *gin.Context) {
 		errs, ok := err.(validator.ValidationErrors)
 		zap.L().Error("signup handle invalid param", zap.Error(err))
 		if !ok {
-			c.JSON(http.StatusOK, gin.H{
-				"msg": err.Error(),
-			})
-			return
-		} else {
-			c.JSON(http.StatusOK, gin.H{
-				"msg": removeTopStruct(errs.Translate(trans)),
-			})
+			ResponseErr(c, CodeInvalidParam)
 			return
 		}
+		ResponseWithMsg(c, CodeInvalidParam, removeTopStruct(errs.Translate(trans)))
+		return
 
 	}
 	//fmt.Println(p)
@@ -40,21 +36,18 @@ func SignUpHandle(c *gin.Context) {
 		errs, ok := err.(validator.ValidationErrors)
 		zap.L().Error("signup logic handle failed", zap.Error(err))
 		if !ok {
-			c.JSON(http.StatusOK, gin.H{
-				"msg": err.Error(),
-			})
-			return
-		} else {
-			c.JSON(http.StatusOK, gin.H{
-				"msg": removeTopStruct(errs.Translate(trans)),
-			})
+			if errors.Is(err, mysql.ErrorUserExist) {
+				ResponseErr(c, CodeUserExist)
+				return
+			}
+			ResponseErr(c, CodeServerBusy)
 			return
 		}
+		ResponseWithMsg(c, CodeServerBusy, removeTopStruct(errs.Translate(trans)))
+		return
 	}
 	// 返回响应
-	c.JSON(http.StatusOK, gin.H{
-		"msg": "signup success",
-	})
+	ResponseSuccess(c, nil)
 }
 
 // LogInHandle 登录路由逻辑处理
@@ -65,16 +58,11 @@ func LogInHandle(c *gin.Context) {
 		errs, ok := err.(validator.ValidationErrors)
 		zap.L().Error("login handle invalid param", zap.Error(err))
 		if !ok {
-			c.JSON(http.StatusOK, gin.H{
-				"msg": err.Error(),
-			})
-			return
-		} else {
-			c.JSON(http.StatusOK, gin.H{
-				"msg": removeTopStruct(errs.Translate(trans)),
-			})
+			ResponseErr(c, CodeInvalidParam)
 			return
 		}
+		ResponseWithMsg(c, CodeInvalidParam, removeTopStruct(errs.Translate(trans)))
+		return
 
 	}
 
@@ -83,19 +71,16 @@ func LogInHandle(c *gin.Context) {
 		errs, ok := err.(validator.ValidationErrors)
 		zap.L().Error("login logic handle failed", zap.String("username", p.Username), zap.Error(err))
 		if !ok {
-			c.JSON(http.StatusOK, gin.H{
-				"msg": "用户名或密码错误",
-			})
-			return
-		} else {
-			c.JSON(http.StatusOK, gin.H{
-				"msg": removeTopStruct(errs.Translate(trans)),
-			})
+			if errors.Is(err, mysql.ErrorInvalidPassword) {
+				ResponseErr(c, CodeInvalidPassword)
+				return
+			}
+			ResponseErr(c, CodeServerBusy)
 			return
 		}
+		ResponseWithMsg(c, CodeServerBusy, removeTopStruct(errs.Translate(trans)))
+		return
 	}
 	// 返回响应
-	c.JSON(http.StatusOK, gin.H{
-		"msg": "login success",
-	})
+	ResponseSuccess(c, nil)
 }

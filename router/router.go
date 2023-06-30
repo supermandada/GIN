@@ -23,13 +23,15 @@ func Setup(mode string) *gin.Engine {
 	r.POST("/login", controllers.LogInHandle)
 
 	// 注册路由
-	r.GET("/", func(c *gin.Context) {
-		//time.Sleep(time.Second * 5)
-		c.String(http.StatusOK, "ok")
-	})
 	r.GET("/version", func(c *gin.Context) {
 		//time.Sleep(time.Second * 5)
 		c.String(http.StatusOK, settings.Conf.Version)
+	})
+	// 没有匹配到路由的情况
+	r.NoRoute(func(c *gin.Context) {
+		c.JSON(http.StatusOK, gin.H{
+			"msg": "404",
+		})
 	})
 	return r
 }

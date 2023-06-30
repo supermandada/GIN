@@ -9,6 +9,12 @@ import (
 
 const secret = "m13750890761@gmail.com"
 
+var (
+	ErrorUserExist       = errors.New("用户已存在")
+	ErrorUserNotExist    = errors.New("用户不存在")
+	ErrorInvalidPassword = errors.New("用户密码错误")
+)
+
 func CheckUsernameExist(username string) (bool, error) {
 	var count int
 	sqlStr := "select count(`user_id`) from `user` where `username`=?"
@@ -17,9 +23,9 @@ func CheckUsernameExist(username string) (bool, error) {
 		return true, err
 	}
 	if count > 0 {
-		return true, errors.New("用户已存在")
+		return true, ErrorUserExist
 	}
-	return false, errors.New("用户不存在")
+	return false, ErrorUserNotExist
 }
 
 func InsertUser(user *models.User) (err error) {
@@ -48,7 +54,7 @@ func CheckPassword(user *models.User) (err error) {
 	}
 	password := encryptPassword(oPassword)
 	if password != user.Password {
-		return errors.New("用户密码错误")
+		return ErrorInvalidPassword
 	}
 	return
 }

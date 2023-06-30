@@ -55,3 +55,76 @@
 {"level":"INFO","time":"2023-06-30T14:21:03.698+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.297993814}
 {"level":"INFO","time":"2023-06-30T14:23:17.918+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2023-06-30T14:23:17.918+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-30T16:10:49.185+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-30T16:10:54.040+0800","caller":"controllers/user.go:72","msg":"login logic handle failed","username":"jack","error":"用户名或密码错误"}
+{"level":"INFO","time":"2023-06-30T16:10:54.041+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.0116731}
+{"level":"ERROR","time":"2023-06-30T16:11:15.910+0800","caller":"controllers/user.go:72","msg":"login logic handle failed","username":"jack1","error":"用户不存在"}
+{"level":"INFO","time":"2023-06-30T16:11:15.910+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.00453493}
+{"level":"INFO","time":"2023-06-30T16:13:44.293+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-30T16:13:44.293+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-30T16:13:45.970+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-30T16:13:53.429+0800","caller":"controllers/user.go:72","msg":"login logic handle failed","username":"jack","error":"用户密码错误"}
+{"level":"INFO","time":"2023-06-30T16:13:53.429+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.00628261}
+{"level":"INFO","time":"2023-06-30T16:15:54.963+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.007863716}
+{"level":"ERROR","time":"2023-06-30T16:17:16.005+0800","caller":"controllers/user.go:59","msg":"login handle invalid param","error":"invalid character '}' looking for beginning of object key string"}
+{"level":"INFO","time":"2023-06-30T16:17:16.005+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000144394}
+{"level":"ERROR","time":"2023-06-30T16:18:56.810+0800","caller":"controllers/user.go:24","msg":"signup handle invalid param","error":"Key: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag\nKey: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2023-06-30T16:18:56.810+0800","caller":"logger/logger.go:78","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000202587}
+{"level":"ERROR","time":"2023-06-30T16:19:15.427+0800","caller":"controllers/user.go:24","msg":"signup handle invalid param","error":"Key: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'required' tag\nKey: 'ParamSignUpUser.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2023-06-30T16:19:15.427+0800","caller":"logger/logger.go:78","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000140078}
+{"level":"ERROR","time":"2023-06-30T16:19:35.562+0800","caller":"controllers/user.go:37","msg":"signup logic handle failed","error":"用户已存在"}
+{"level":"INFO","time":"2023-06-30T16:19:35.562+0800","caller":"logger/logger.go:78","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.006456939}
+{"level":"ERROR","time":"2023-06-30T16:19:40.437+0800","caller":"controllers/user.go:37","msg":"signup logic handle failed","error":"用户不存在"}
+{"level":"INFO","time":"2023-06-30T16:19:40.437+0800","caller":"logger/logger.go:78","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.004566034}
+{"level":"INFO","time":"2023-06-30T16:25:52.817+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-30T16:25:52.817+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-30T16:25:58.671+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-30T16:26:02.848+0800","caller":"logger/logger.go:78","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.012125053}
+{"level":"ERROR","time":"2023-06-30T16:26:07.212+0800","caller":"controllers/user.go:37","msg":"signup logic handle failed","error":"用户已存在"}
+{"level":"INFO","time":"2023-06-30T16:26:07.212+0800","caller":"logger/logger.go:78","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.004122278}
+{"level":"INFO","time":"2023-06-30T16:27:24.283+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-30T16:27:24.283+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-30T16:27:44.347+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-30T16:27:44.353+0800","caller":"web_app/main.go:49","msg":"mysql init failed err:","error":"Error 1049 (42000): Unknown database 'bluebell1'"}
+{"level":"DEBUG","time":"2023-06-30T16:28:39.054+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-30T16:28:44.153+0800","caller":"controllers/user.go:37","msg":"signup logic handle failed","error":"Error 1146 (42S02): Table 'bluebelltest.user' doesn't exist"}
+{"level":"INFO","time":"2023-06-30T16:28:44.153+0800","caller":"logger/logger.go:78","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.00172707}
+{"level":"ERROR","time":"2023-06-30T16:28:51.496+0800","caller":"controllers/user.go:59","msg":"login handle invalid param","error":"invalid character '}' looking for beginning of object key string"}
+{"level":"INFO","time":"2023-06-30T16:28:51.497+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000095876}
+{"level":"ERROR","time":"2023-06-30T16:29:06.849+0800","caller":"controllers/user.go:72","msg":"login logic handle failed","username":"jack","error":"Error 1146 (42S02): Table 'bluebelltest.user' doesn't exist"}
+{"level":"INFO","time":"2023-06-30T16:29:06.849+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.003289654}
+{"level":"ERROR","time":"2023-06-30T16:30:27.002+0800","caller":"controllers/user.go:72","msg":"login logic handle failed","username":"jack1","error":"Error 1146 (42S02): Table 'bluebelltest.user' doesn't exist"}
+{"level":"INFO","time":"2023-06-30T16:30:27.002+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.003652552}
+{"level":"INFO","time":"2023-06-30T16:37:37.875+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-30T16:37:37.875+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-30T16:37:51.087+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-30T16:37:55.954+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.009594617}
+{"level":"INFO","time":"2023-06-30T16:38:01.789+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.008181567}
+{"level":"ERROR","time":"2023-06-30T16:38:05.321+0800","caller":"controllers/user.go:72","msg":"login logic handle failed","username":"jack9","error":"用户不存在"}
+{"level":"INFO","time":"2023-06-30T16:38:05.321+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.004548292}
+{"level":"ERROR","time":"2023-06-30T16:38:24.133+0800","caller":"controllers/user.go:72","msg":"login logic handle failed","username":"jack","error":"用户密码错误"}
+{"level":"INFO","time":"2023-06-30T16:38:24.134+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.006143359}
+{"level":"INFO","time":"2023-06-30T16:40:41.075+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-30T16:40:41.075+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-30T16:40:42.682+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-06-30T16:40:48.504+0800","caller":"controllers/user.go:72","msg":"login logic handle failed","username":"jack","error":"用户密码错误"}
+{"level":"INFO","time":"2023-06-30T16:40:48.504+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.007878043}
+{"level":"ERROR","time":"2023-06-30T16:40:50.992+0800","caller":"controllers/user.go:72","msg":"login logic handle failed","username":"jack1","error":"用户密码错误"}
+{"level":"INFO","time":"2023-06-30T16:40:50.992+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.013236199}
+{"level":"ERROR","time":"2023-06-30T16:40:55.844+0800","caller":"controllers/user.go:72","msg":"login logic handle failed","username":"jack21","error":"用户不存在"}
+{"level":"INFO","time":"2023-06-30T16:40:55.844+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.004446238}
+{"level":"INFO","time":"2023-06-30T16:44:00.403+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.005793639}
+{"level":"INFO","time":"2023-06-30T16:49:41.501+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-30T16:49:41.501+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-30T16:49:42.897+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-30T16:49:51.913+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.008238533}
+{"level":"ERROR","time":"2023-06-30T16:49:55.567+0800","caller":"controllers/user.go:72","msg":"login logic handle failed","username":"jack12","error":"用户不存在"}
+{"level":"INFO","time":"2023-06-30T16:49:55.567+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.003232654}
+{"level":"ERROR","time":"2023-06-30T16:50:01.414+0800","caller":"controllers/user.go:72","msg":"login logic handle failed","username":"jack1","error":"用户密码错误"}
+{"level":"INFO","time":"2023-06-30T16:50:01.414+0800","caller":"logger/logger.go:78","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.007460616}
+{"level":"INFO","time":"2023-06-30T16:55:21.254+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-30T16:55:21.254+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-06-30T17:08:19.922+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"INFO","time":"2023-06-30T17:08:32.722+0800","caller":"logger/logger.go:78","msg":"/login3","status":200,"method":"POST","path":"/login3","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.000041934}
+{"level":"INFO","time":"2023-06-30T17:50:04.282+0800","caller":"web_app/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-06-30T17:50:04.282+0800","caller":"web_app/main.go:103","msg":"Server exiting"}
