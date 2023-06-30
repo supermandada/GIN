@@ -4,7 +4,6 @@ import (
 	"crypto/md5"
 	"encoding/hex"
 	"errors"
-	"fmt"
 	"web_app/models"
 )
 
@@ -14,7 +13,7 @@ func CheckUsernameExist(username string) (err error) {
 	var count int
 	sqlStr := "select count(`user_id`) from `user` where `username`=?"
 	if err := db.Get(&count, sqlStr, username); err != nil {
-		fmt.Println(err)
+		//fmt.Println(err)
 		return err
 	}
 	if count > 0 {

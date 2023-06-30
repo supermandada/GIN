@@ -23,3 +23,7 @@ func SignUp(p *models.ParamSignUpUser) (err error) {
 	// 数据存入数据库
 	return mysql.InsertUser(user)
 }
+
+func SignIn(p *models.ParamSignInUser) (err error) {
+	return err
+}

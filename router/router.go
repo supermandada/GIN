@@ -9,12 +9,18 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func Setup() *gin.Engine {
+func Setup(mode string) *gin.Engine {
+	if mode == gin.ReleaseMode {
+		gin.SetMode(gin.ReleaseMode)
+	}
 	r := gin.New()
 	r.Use(logger.GinLogger(), logger.GinRecovery(true))
 
 	// 用户注册
 	r.POST("/signup", controllers.SignUpHandle)
+
+	// 用户登录
+	r.POST("/signin", controllers.SignInHandle)
 
 	// 注册路由
 	r.GET("/", func(c *gin.Context) {
