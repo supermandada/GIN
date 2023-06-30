@@ -60,7 +60,7 @@ func SignUpHandle(c *gin.Context) {
 // LogInHandle 登录路由逻辑处理
 func LogInHandle(c *gin.Context) {
 	// 接收和校验参数
-	p := new(models.ParamSignInUser)
+	p := new(models.ParamLogInUser)
 	if err := c.ShouldBindJSON(p); err != nil {
 		errs, ok := err.(validator.ValidationErrors)
 		zap.L().Error("signIn handle invalid param", zap.Error(err))

@@ -9,8 +9,8 @@ type ParamSignUpUser struct {
 	RePassword string `json:"re_password" binding:"required,eqfield=Password"`
 }
 
-// ParamSignInUser 登录
-type ParamSignInUser struct {
+// ParamLogInUser 登录
+type ParamLogInUser struct {
 	Username string `json:"username" binding:"required"`
 	Password string `json:"password" binding:"required"`
 }
