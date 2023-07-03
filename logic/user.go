@@ -3,6 +3,7 @@ package logic
 import (
 	"web_app/dao/mysql"
 	"web_app/models"
+	"web_app/pkg/jwt"
 	"web_app/pkg/snowflake"
 )
 
@@ -24,10 +25,10 @@ func SignUp(p *models.ParamSignUpUser) (err error) {
 	return mysql.InsertUser(user)
 }
 
-func LogIn(p *models.ParamLogInUser) (err error) {
+func LogIn(p *models.ParamLogInUser) (token string, err error) {
 	// 业务逻辑处理，判断用户是否存在
 	if _, err := mysql.CheckUsernameExist(p.Username); err != mysql.ErrorUserExist {
-		return err
+		return "", err
 	}
 	// 创建用户实例存入数据中
 	user := &models.User{
@@ -35,5 +36,9 @@ func LogIn(p *models.ParamLogInUser) (err error) {
 		Password: p.Password,
 	}
 	// 判断密码是否正确
-	return mysql.CheckPassword(user)
+	if err := mysql.CheckPassword(user); err != nil {
+		return "", err
+	}
+	// 生成jwt的token
+	return jwt.GenToken(user.UserID, user.Username)
 }

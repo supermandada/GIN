@@ -67,7 +67,8 @@ func LogInHandle(c *gin.Context) {
 	}
 
 	// 业务逻辑的处理
-	if err := logic.LogIn(p); err != nil {
+	token, err := logic.LogIn(p)
+	if err != nil {
 		errs, ok := err.(validator.ValidationErrors)
 		zap.L().Error("login logic handle failed", zap.String("username", p.Username), zap.Error(err))
 		if !ok {
@@ -82,5 +83,5 @@ func LogInHandle(c *gin.Context) {
 		return
 	}
 	// 返回响应
-	ResponseSuccess(c, nil)
+	ResponseSuccess(c, token)
 }
