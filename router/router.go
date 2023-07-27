@@ -28,6 +28,7 @@ func Setup(mode string) *gin.Engine {
 
 	{
 		v1.GET("/community", controllers.CommunityHandle)
+		v1.GET("/community/:id", controllers.CommunityDetailHandle)
 	}
 
 	//// 注册路由

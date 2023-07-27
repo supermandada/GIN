@@ -185,3 +185,12 @@
 {"level":"INFO","time":"2023-07-26T17:25:08.336+0800","caller":"logger/logger.go:78","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.007554236}
 {"level":"INFO","time":"2023-07-26T17:25:13.043+0800","caller":"logger/logger.go:78","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.007328696}
 {"level":"INFO","time":"2023-07-26T17:26:33.699+0800","caller":"logger/logger.go:78","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.010855319}
+{"level":"DEBUG","time":"2023-07-27T09:45:55.991+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"DEBUG","time":"2023-07-27T11:02:05.090+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"DEBUG","time":"2023-07-27T11:02:36.063+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"ERROR","time":"2023-07-27T11:02:42.264+0800","caller":"controllers/community.go:36","msg":"logic.GetCommunityList failed","error":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?' at line 1"}
+{"level":"INFO","time":"2023-07-27T11:02:42.264+0800","caller":"logger/logger.go:78","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.051215095}
+{"level":"DEBUG","time":"2023-07-27T11:03:54.340+0800","caller":"web_app/main.go:46","msg":"logger init success..."}
+{"level":"INFO","time":"2023-07-27T11:03:58.432+0800","caller":"logger/logger.go:78","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.333798218}
+{"level":"INFO","time":"2023-07-27T11:04:05.536+0800","caller":"logger/logger.go:78","msg":"/api/v1/community/2","status":200,"method":"GET","path":"/api/v1/community/2","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.32.3","errors":"","cost":0.004728789}
+{"level":"DEBUG","time":"2023-07-27T11:18:15.360+0800","caller":"web_app/main.go:46","msg":"logger init success..."}

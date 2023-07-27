@@ -3,17 +3,10 @@ package mysql
 import (
 	"crypto/md5"
 	"encoding/hex"
-	"errors"
 	"web_app/models"
 )
 
 const secret = "m13750890761@gmail.com"
-
-var (
-	ErrorUserExist       = errors.New("用户已存在")
-	ErrorUserNotExist    = errors.New("用户不存在")
-	ErrorInvalidPassword = errors.New("用户密码错误")
-)
 
 func CheckUsernameExist(username string) (bool, error) {
 	var count int
